@@ -1,19 +1,25 @@
-// app/page.tsx
-import SwiperCarousel from '../components/SwiperCarousel';
+import Button from "@/src/components/Button";
+import Footer from "@/src/components/Footer";
+import Header from "@/src/components/Header";
+import SwiperCarousel from "@/src/components/ImageCarousel";
+import Product from "@/src/components/product";
+import Image from "next/image";
 
-export default function HomePage() {
-  const dummyImages = [ // Certifique-se que isto está definido corretamente
-    { src: '/images/slide1.jpg', alt: 'Slide 1 - Demo' },
-    { src: '/images/slide2.jpg', alt: 'Slide 2 - Demo' },
-    { src: '/images/slide3.jpg', alt: 'Slide 3 - Demo' },
+export default function Home() {
+  const carouselImages = [
+    { src: "/pinguin.jpg", alt: "Pinguim" },
+    { src: "/pinguin_1.jpg", alt: "Pinguim 2" },
+    { src: "/palhaco.jpg", alt: "Palhaco" },
   ];
 
   return (
-    <div>
-      <h1>Meu Projeto Next.js com Swiper.js</h1>
-      
-      {/* Passando o prop corretamente */}
-      <SwiperCarousel images={dummyImages} /> 
+    <div className="flex flex-col w-screen h-screen">
+      <Header />
+
+      <div className="w-full flex-1">
+        <SwiperCarousel images={carouselImages} />
+      </div>
+ <Footer />     
     </div>
   );
 }
