@@ -1,12 +1,11 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import Image from "next/image";
 
 export default function SwiperCarousel({ images }) {
 	if (!images || !Array.isArray(images) || images.length === 0) {
@@ -14,18 +13,18 @@ export default function SwiperCarousel({ images }) {
 	}
 
 	return (
-		<div className="max-w-4xl mx-auto">
+		<div className="max-w-4xl mx-auto w-full h-full">
 			<Swiper
 				modules={[Navigation, Pagination, Autoplay]}
 				navigation
 				pagination={{ clickable: true }}
 				autoplay={{ delay: 5000 }}
 				loop
-				className="rounded-lg overflow-hidden"
+				className="rounded-lg overflow-hidden w-full h-full"
 			>
 				{images.map((image, index) => (
-					<SwiperSlide key={index}>
-						<div className="relative w-full h-96">
+					<SwiperSlide key={image.src}>
+						<div className="relative w-full h-full">
 							<Image
 								src={image.src}
 								alt={image.alt}
