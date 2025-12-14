@@ -6,20 +6,24 @@ import Product from "@/src/components/product";
 import Image from "next/image";
 
 export default function Home() {
-  const carouselImages = [
-    { src: "/pinguin.jpg", alt: "Pinguim" },
-    { src: "/pinguin_1.jpg", alt: "Pinguim 2" },
-    { src: "/palhaco.jpg", alt: "Palhaco" },
-  ];
+	const carouselImages = [
+		{ src: "/pinguin.jpg", alt: "Pinguim" },
+		{ src: "/pinguin_1.jpg", alt: "Pinguim 2" },
+		{ src: "/palhaco.jpg", alt: "Palhaco" },
+	];
 
-  return (
-    <div className="flex flex-col w-screen h-screen">
-      <Header />
+	return (
+		<div className="flex flex-col w-screen h-screen">
+			<Header />
 
-      <div className="w-full flex-1">
-        <SwiperCarousel images={carouselImages} />
-      </div>
- <Footer />     
-    </div>
-  );
+			<div className="w-full flex-1">
+				<SwiperCarousel images={carouselImages} />
+			</div>
+			<div className="flex items-center m-4 w-full justify-center">
+				<Product />
+			</div>
+
+			<Footer />
+		</div>
+	);
 }
