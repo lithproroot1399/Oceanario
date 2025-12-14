@@ -1,3 +1,6 @@
+import { FaUsers } from "react-icons/fa";
+import { IoMapSharp } from "react-icons/io5";
+
 export default function Product() {
 	return (
 		<div className="flex gap-5 bg-blue-900 p-4 text-white">
@@ -18,16 +21,24 @@ export default function Product() {
 						<span>Adquira já os seus bilhetes online.</span>
 						<button
 							type="button"
-							className="flex border border-red-600 px-3 py-1 mt-2"
+							className="flex border rounded-b-md border-white px-3 py-1 mt-2"
 						>
 							COMPRAR
 						</button>
 					</div>
 				</div>
-				<button type="button" className="border-white">
-					HORÁRIO COMPLETO
-				</button>
-				<div className="flex-col"></div>
+			</div>
+			<div>
+				<h1 className="text-3xl">PLANEAR VISITA</h1>
+				<div className="flex items-center gap-2">
+					<IoMapSharp className="size-6" />
+					<span>Como chegar</span>
+				</div>
+
+				<div className="flex items-center gap-2">
+					<FaUsers className="size-6" />
+					<span>Visitas guiadas</span>
+				</div>
 			</div>
 		</div>
 	);
