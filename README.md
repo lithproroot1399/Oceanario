@@ -24,7 +24,7 @@ Estou a desenvolver uma página web inspirada no contexto do Oceanário para apl
 ---
 
 ### 📫 Vamos conversar?
-- **LinkedIn:** [Teu Link Aqui]([https://linkedin.com](https://www.linkedin.com/in/proroot/))
+- **LinkedIn:** https://www.linkedin.com/in/proroot/
 - **Localização:** 📍 Lisboa, Portugal
 
 ---
