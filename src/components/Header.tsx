@@ -12,8 +12,8 @@ export default function Header() {
 					className="flex"
 					src="/logo.png"
 					alt="Oceanario logo"
-					width={100}
-					height={20}
+					width={150}
+					height={30}
 					priority
 				/>
 
