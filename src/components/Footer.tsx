@@ -6,14 +6,16 @@ import { IoLogoFacebook } from "react-icons/io5";
 
 export default function Footer() {
 	return (
-		<div className="flex flex-col bg-zinc-400 gap-4">
-			<Image
+		<div className="mt-8">
+			<div className="flex bg-zinc-400 gap-4">
+			<div className="flex flex-col m-4">
+				<Image
 				color="black"
 				className="flex"
 				src="/Logo-Oceanario-de-Lisboa_Footer.png"
 				alt="Oceanario logo"
-				width={100}
-				height={20}
+				width={150}
+				height={30}
 				priority
 			/>
 			<p className="text-black font-bold text-3xl">Oceanário de Lisboa</p>
@@ -29,6 +31,8 @@ export default function Footer() {
 				<FaYoutube />
 				<FaLinkedin />
 			</div>
+			</div>
+		</div>
 		</div>
 	);
 }
