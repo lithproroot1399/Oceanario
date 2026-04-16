@@ -13,17 +13,17 @@ export default function SwiperCarousel({ images }) {
 	}
 
 	return (
-		<div className="max-w-4xl mx-auto w-full h-full">
+		<div className="w-full h-full">
 			<Swiper
 				modules={[Navigation, Pagination, Autoplay]}
 				navigation
 				pagination={{ clickable: true }}
 				autoplay={{ delay: 5000 }}
 				loop
-				className="rounded-lg overflow-hidden w-full h-full"
+				className="w-full h-full"
 			>
 				{images.map((image, index) => (
-					<SwiperSlide key={image.src}>
+					<SwiperSlide key={image.src} className="w-full h-full">
 						<div className="relative w-full h-full">
 							<Image
 								src={image.src}

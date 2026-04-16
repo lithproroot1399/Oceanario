@@ -1,4 +1,3 @@
-// antes: import Image from "next/image";
 import Footer from "@/src/components/Footer";
 import Header from "@/src/components/Header";
 import SwiperCarousel from "@/src/components/ImageCarousel";
@@ -9,17 +8,25 @@ export default function Home() {
 		{ src: "/pinguin.jpg", alt: "Pinguim" },
 		{ src: "/pinguin_1.jpg", alt: "Pinguim 2" },
 		{ src: "/palhaco.jpg", alt: "Palhaco" },
+		{ src: "/fish.jpg", alt: "Palhaco" },
+		{ src: "/fish_1.jpg", alt: "Palhaco" },
 	];
 
 	return (
-		<div className="flex flex-col w-screen h-screen">
+		<div className="flex flex-col w-screen">
 			<Header />
-			<div className="w-full flex-1">
+
+			{/* Carousel ocupa toda a viewport */}
+			<section className="w-full h-screen">
 				<SwiperCarousel images={carouselImages} />
-			</div>
-			<div className="flex items-center m-4 w-full justify-center">
-				<Product />
-			</div>
+			</section>
+
+			{/* Conteúdo abaixo do carousel */}
+			<section className="w-full">
+				<div className="m-4 w-full flex items-center justify-center">
+					<Product />
+				</div>
+			</section>
 			<Footer />
 		</div>
 	);
