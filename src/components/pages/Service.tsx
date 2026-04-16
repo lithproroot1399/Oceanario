@@ -5,76 +5,122 @@ import { BsCloudPlusFill } from "react-icons/bs";
 import { FaHome } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { BsGlobeAmericas } from "react-icons/bs";
-
+import { GiServerRack } from "react-icons/gi";
+import { RiDashboard2Fill } from "react-icons/ri";
+import { FaUsersCog } from "react-icons/fa";
 
 export default function Service() {
-	return (
-		<div className="flex flex-col m-4 gap-4">
-		
-			<a
-					href="https://entra.microsoft.com/auth/login/"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="flex items-center gap-2 hover:bg-white hover:text-black p-2 rounded transition"
-				>
-					<FaMicrosoft className="size-10 text-blue-500"/>
-					<h1 className="text-2xl font-bold text-blue-500">MICROSOFT</h1>
-				</a>
-				
-				<a
-					href="https://www.dropbox.com/home"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="flex items-center gap-2 hover:bg-white hover:text-black p-2 rounded transition"
-				>
-					<FaDropbox className="size-10 text-blue-500"/>
-					<h1 className="text-2xl font-bold text-blue-500">DROPBOX</h1>
-				</a>
-				
+    return (
+        <div className="min-h-screen bg-black p-4">
+            <div className="mx-auto flex flex-col gap-6 md:flex-row max-w-7xl">
+                <aside className="w-full rounded-3xl bg-white p-6 shadow-lg md:w-1/3">
+                    <h2 className="mb-6 text-3xl font-bold text-slate-900">Acessos rápidos</h2>
+                    <a
+                        href="https://entra.microsoft.com/auth/login/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+                    >
+                        <FaMicrosoft className="size-10 text-blue-500" />
+                        <span className="text-xl font-semibold">MICROSOFT</span>
+                    </a>
 
-				
+                    <a
+                        href="https://entra.microsoft.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers/menuId/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+                    >
+                        <FaUsersCog className="size-10 text-blue-500" />
+                        <span className="text-xl font-semibold">ACOUNT</span>
+                    </a>
 
-				<a
-					href="https://claranetpt.service-now.com/now/nav/ui/classic/params/target/%24pa_dashboard.do"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="flex items-center gap-2 hover:bg-white hover:text-black p-2 rounded transition"
-				>
-					<BsCloudPlusFill className="size-10 text-blue-500"/>
-					<h1 className="text-2xl font-bold text-blue-500">SERVICE DESK</h1>
-				</a>
+                    <a
+                        href="https://www.dropbox.com/home"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+                    >
+                        <FaDropbox className="size-10 text-blue-500" />
+                        <span className="text-xl font-semibold">DROPBOX</span>
+                    </a>
 
-				<a
-					href="https://alvov3.primaveraspace.com/"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="flex items-center gap-2 hover:bg-white hover:text-black p-2 rounded transition"
-				>
-					<FaHome className="size-10 text-blue-500"/>
-					<h1 className="text-2xl font-bold text-blue-500">OMINIA</h1>
-				</a>
+                    <a
+                        href="https://claranetpt.service-now.com/now/nav/ui/classic/params/target/%24pa_dashboard.do"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+                    >
+                        <BsCloudPlusFill className="size-10 text-blue-500" />
+                        <span className="text-xl font-semibold">SERVICE DESK</span>
+                    </a>
 
-				<a
-					href="https://mytho.oceanario.pt:5005/"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="flex items-center gap-2 hover:bg-white hover:text-black p-2 rounded transition"
-				>
-					<BsGlobeAmericas className="size-10 text-blue-500"/>
-					<h1 className="text-2xl font-bold text-blue-500">MYTHO</h1>
-				</a>
+                    <a
+                        href="https://alvov3.primaveraspace.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+                    >
+                        <FaHome className="size-10 text-blue-500" />
+                        <span className="text-xl font-semibold">OMINIA</span>
+                    </a>
 
-				<a
-					href="https://admin.cloud.microsoft/?referrer=entra#/SharedMailbox/:/MailboxDetails/354b021d-a5c0-4d39-9731-3af5a19040f0"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="flex items-center gap-2 hover:bg-white hover:text-black p-2 rounded transition"
-				>
-					<CiMail className="size-10 text-blue-500"/>
-					<h1 className="text-2xl font-bold text-blue-500">MAILBOXES</h1>
-				</a>
-			</div>
-		
-		
-	);
+                    <a
+                        href="https://mytho.oceanario.pt:5005/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+                    >
+                        <BsGlobeAmericas className="size-10 text-blue-500" />
+                        <span className="text-xl font-semibold">MYTHO</span>
+                    </a>
+
+
+                    <a
+                        href="https://mytho.oceanario.pt:5005/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+                    >
+                        <GiServerRack className="size-10 text-blue-500" />
+                        <span className="text-xl font-semibold">SWITCHS</span>
+                    </a>
+
+                    <a
+                        href="http://localhost:5173/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+                    >
+                        <RiDashboard2Fill className="size-10 text-blue-500" />
+                        <span className="text-xl font-semibold">DASHBOARD</span>
+                    </a>
+
+                    <a
+                        href="https://admin.cloud.microsoft/?referrer=entra#/SharedMailbox/:/MailboxDetails/354b021d-a5c0-4d39-9731-3af5a19040f0"
+        
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+                    >
+                        <CiMail className="size-10 text-blue-500" />
+                        <span className="text-xl font-semibold">MAILBOXES</span>
+                    </a>
+                </aside>
+
+                <main className="flex w-full items-center justify-center rounded-3xl bg-white p-6 shadow-lg md:w-2/3">
+                    <div className="w-full max-w-4xl text-center">
+                        <Image
+                            color="black"
+                            src="/marvin-meyer-SYTO3xs06fU-unsplash.jpg"
+                            alt="Oceanario imagem destaque"
+                            width={900}
+                            height={600}
+                            className="mx-auto h-auto max-w-full rounded-3xl object-cover"
+                            priority
+                        />
+                    </div>
+                </main>
+            </div>
+        </div>
+    );
 }
