@@ -7,6 +7,7 @@ import Product from "@/src/components/product";
 export default function Home() {
 	return (
 			<div>
+				
 			<Service />
 		</div>
 	);

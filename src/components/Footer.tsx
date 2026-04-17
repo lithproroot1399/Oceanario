@@ -62,9 +62,7 @@ export default function Footer() {
 Subscreva a newsletter <br />
 do Oceanário</h1>	
 		</div>
-			
-
-			
+		
 			</div>
 		</div>
 		
