@@ -14,7 +14,17 @@ export default function Service() {
         <div className="min-h-screen bg-black p-4">
             <div className="mx-auto flex flex-col gap-6 md:flex-row max-w-7xl">
                 <aside className="w-full rounded-3xl bg-white p-6 shadow-lg md:w-1/3">
-                    <h2 className="mb-6 text-3xl font-bold text-slate-900">Acessos rápidos</h2>
+                    <div className="flex gap-y-2">
+						<Image
+									color="black"
+									className="flex"
+									src="/Logo_Fundacao.png"
+									alt="Oceanario logo"
+									width={200}
+									height={60}
+									priority
+								/>
+					</div>
                     <a
                         href="https://entra.microsoft.com/auth/login/"
                         target="_blank"
@@ -108,7 +118,9 @@ export default function Service() {
                 </aside>
 
                 <main className="flex w-full items-center justify-center rounded-3xl bg-white p-6 shadow-lg md:w-2/3">
-                    <div className="w-full max-w-4xl text-center">
+                    				
+					<div className="w-full max-w-4xl text-center">
+						
                         <Image
                             color="black"
                             src="/marvin-meyer-SYTO3xs06fU-unsplash.jpg"
