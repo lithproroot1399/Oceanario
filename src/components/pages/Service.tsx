@@ -2,12 +2,13 @@ import Image from "next/image";
 import { FaDropbox } from "react-icons/fa";
 import { FaMicrosoft } from "react-icons/fa";
 import { BsCloudPlusFill } from "react-icons/bs";
-import { FaHome } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { BsGlobeAmericas } from "react-icons/bs";
-import { GiServerRack } from "react-icons/gi";
+import { FaNetworkWired } from "react-icons/fa6";
 import { RiDashboard2Fill } from "react-icons/ri";
 import { FaUsersCog } from "react-icons/fa";
+import { MdOutlineElectricCar } from "react-icons/md";
+
 
 export default function Service() {
     return (
@@ -66,13 +67,13 @@ export default function Service() {
                     </a>
 
                     <a
-                        href="https://alvov3.primaveraspace.com/"
+                        href="https://evmanager.efimob.com/login"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
                     >
-                        <FaHome className="size-10 text-blue-500" />
-                        <span className="text-xl font-semibold">OMINIA</span>
+                        <MdOutlineElectricCar className="size-10 text-blue-500" />
+                        <span className="text-xl font-semibold">EFIMOB</span>
                     </a>
 
                     <a
@@ -92,8 +93,8 @@ export default function Service() {
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
                     >
-                        <GiServerRack className="size-10 text-blue-500" />
-                        <span className="text-xl font-semibold">SWITCHS</span>
+                        <FaNetworkWired className="size-10 text-blue-500" />
+                        <span className="text-xl font-semibold">NETWORK</span>
                     </a>
 
                     <a
@@ -108,7 +109,7 @@ export default function Service() {
 
                     <a
                         href="https://admin.cloud.microsoft/?referrer=entra#/SharedMailbox/:/MailboxDetails/354b021d-a5c0-4d39-9731-3af5a19040f0"
-        
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
                     >
