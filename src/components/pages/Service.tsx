@@ -8,6 +8,7 @@ import { FaNetworkWired } from "react-icons/fa6";
 import { RiDashboard2Fill } from "react-icons/ri";
 import { FaUsersCog } from "react-icons/fa";
 import { MdOutlineElectricCar } from "react-icons/md";
+import { AiFillPrinter } from "react-icons/ai";
 
 
 export default function Service() {
@@ -67,6 +68,16 @@ export default function Service() {
                     </a>
 
                     <a
+                        href="https://admin.cloud.microsoft/?referrer=entra#/SharedMailbox/:/MailboxDetails/354b021d-a5c0-4d39-9731-3af5a19040f0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+                    >
+                        <CiMail className="size-10 text-blue-500" />
+                        <span className="text-xl font-semibold">MAILBOXES</span>
+                    </a>
+
+                    <a
                         href="https://evmanager.efimob.com/login"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -93,8 +104,18 @@ export default function Service() {
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
                     >
-                        <FaNetworkWired className="size-10 text-blue-500" />
+                        <FaNetworkWired  className="size-10 text-blue-500" />
                         <span className="text-xl font-semibold">NETWORK</span>
+                    </a>
+
+                    <a
+                        href="https://admin.cloud.microsoft/?referrer=entra#/SharedMailbox/:/MailboxDetails/354b021d-a5c0-4d39-9731-3af5a19040f0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+                    >
+                        <AiFillPrinter className="size-10 text-blue-500" />
+                        <span className="text-xl font-semibold">PRINTERS</span>
                     </a>
 
                     <a
@@ -107,15 +128,8 @@ export default function Service() {
                         <span className="text-xl font-semibold">DASHBOARD</span>
                     </a>
 
-                    <a
-                        href="https://admin.cloud.microsoft/?referrer=entra#/SharedMailbox/:/MailboxDetails/354b021d-a5c0-4d39-9731-3af5a19040f0"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
-                    >
-                        <CiMail className="size-10 text-blue-500" />
-                        <span className="text-xl font-semibold">MAILBOXES</span>
-                    </a>
+                    
+                    
                 </aside>
 
                 <main className="flex w-full items-center justify-center rounded-3xl bg-white p-6 shadow-lg md:w-2/3">
