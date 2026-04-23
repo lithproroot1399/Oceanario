@@ -1,4 +1,4 @@
-import Printers from "@/src/components/Printers"
+import Printers from "@/components/Printers"
 
 export default function PrintersPage() {
   return <Printers />

@@ -1,10 +1,10 @@
-import Footer from "@/src/components/Footer"
-import Header from "@/src/components/Header"
-import SwiperCarousel from "@/src/components/ImageCarousel"
-import Network from "@/src/components/Network"
-import Service from "@/src/components/pages/Service"
-import Printers from "@/src/components/Printers"
-import Product from "@/src/components/product"
+import Footer from "@/components/Footer"
+import Header from "@/components/Header"
+import SwiperCarousel from "@/components/ImageCarousel"
+import Network from "@/components/Network"
+import Service from "@/components/pages/Service"
+import Printers from "@/components/Printers"
+import Product from "@/components/product"
 
 export default function Home() {
   return (

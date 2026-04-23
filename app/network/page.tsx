@@ -1,5 +1,5 @@
-import Network from "@/src/components/Network";
+import Network from "@/components/Network"
 
 export default function NetworkPage() {
-  return <Network />;
+  return <Network />
 }
