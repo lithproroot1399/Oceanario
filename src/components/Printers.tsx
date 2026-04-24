@@ -7,6 +7,7 @@ import { GiPoliceOfficerHead } from "react-icons/gi"
 import { useState } from "react"
 import { FcPrint } from "react-icons/fc"
 import { PiBuildingOfficeBold } from "react-icons/pi"
+import { MdBiotech } from "react-icons/md"
 
 export default function Printers() {
   const [showSeguranca, setShowSeguranca] = useState(false)
@@ -60,6 +61,16 @@ export default function Printers() {
         >
           <PiBuildingOfficeBold className="size-10 text-blue-500" />
           <span className="text-xl font-semibold">OFFICE</span>
+        </a>
+
+        <a
+          href="https://10.1.100.30/properties/authentication/login.php?redir=/stat/welcome.php"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+        >
+          <MdBiotech className="size-10 text-blue-500" />
+          <span className="text-xl font-semibold">BIOLOGIA</span>
         </a>
       </main>
       <div className="flex-1 flex items-center justify-center">

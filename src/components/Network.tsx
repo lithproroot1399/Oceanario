@@ -1,12 +1,13 @@
 "use client"
 
 import Image from "next/image"
-import { FaNetworkWired } from "react-icons/fa"
+import { FaNetworkWired, FaTools } from "react-icons/fa"
 import { MdNetworkCell } from "react-icons/md"
 import { MdVpnLock } from "react-icons/md"
 import { TbNetwork } from "react-icons/tb"
 import { GiServerRack } from "react-icons/gi"
 import { useState } from "react"
+import { c } from "react-icons/fa"
 import Printers from "./Printers"
 
 export default function Network() {
@@ -76,6 +77,17 @@ export default function Network() {
         >
           <MdVpnLock className="size-10 text-blue-500" />
           <span className="text-xl font-semibold">VPN</span>
+        </button>
+        {/** biome-ignore lint/a11y/useButtonType: <explanation> */}
+        <button
+          onClick={() => {
+            setShowWiFi(!showWiFi)
+            setShowWiFi(false)
+          }}
+          className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition cursor-pointer"
+        >
+          <FaTools className="size-10 text-blue-500" />
+          <span className="text-xl font-semibold">TOOLS</span>
         </button>
       </main>
       <aside className="flex w-full items-center justify-center rounded-3xl bg-white p-6 shadow-lg md:w-2/3">
