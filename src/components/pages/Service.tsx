@@ -8,7 +8,7 @@ import { CiMail } from "react-icons/ci"
 import { BsGlobeAmericas } from "react-icons/bs"
 import { FaNetworkWired } from "react-icons/fa6"
 import { RiDashboard2Fill } from "react-icons/ri"
-import { FaUsersCog } from "react-icons/fa"
+import { IoLockOpen } from "react-icons/io5"
 import { MdOutlineElectricCar } from "react-icons/md"
 import { AiFillPrinter } from "react-icons/ai"
 
@@ -17,17 +17,6 @@ export default function Service() {
     <div className="min-h-screen bg-black p-4">
       <div className="mx-auto flex flex-col gap-6 md:flex-row max-w-7xl">
         <aside className="w-full rounded-3xl bg-white p-6 shadow-lg md:w-1/3">
-          <div className="flex gap-y-2">
-            <Image
-              color="black"
-              className="flex"
-              src="/Logo_Fundacao.png"
-              alt="Oceanario logo"
-              width={200}
-              height={60}
-              priority
-            />
-          </div>
           <a
             href="https://entra.microsoft.com/auth/login/"
             target="_blank"
@@ -36,16 +25,6 @@ export default function Service() {
           >
             <FaMicrosoft className="size-10 text-blue-500" />
             <span className="text-xl font-semibold">MICROSOFT</span>
-          </a>
-
-          <a
-            href="https://entra.microsoft.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers/menuId/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
-          >
-            <FaUsersCog className="size-10 text-blue-500" />
-            <span className="text-xl font-semibold">ACOUNT</span>
           </a>
 
           <a
@@ -77,7 +56,15 @@ export default function Service() {
             <BsCloudPlusFill className="size-10 text-blue-500" />
             <span className="text-xl font-semibold">SERVICE DESK</span>
           </a>
-
+          <a
+            href="http://10.2.1.122:8100/index.html#!/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+          >
+            <IoLockOpen className="size-10 text-blue-500" />
+            <span className="text-xl font-semibold">SALTO</span>
+          </a>
           <a
             href="https://evmanager.efimob.com/login"
             target="_blank"
@@ -131,6 +118,17 @@ export default function Service() {
 
         <main className="flex w-full items-center justify-center rounded-3xl bg-white p-6 shadow-lg md:w-2/3">
           <div className="w-full max-w-4xl text-center">
+            <div className="flex">
+              <Image
+                color="black"
+                className="flex"
+                src="/Logo.png"
+                alt="Oceanario logo"
+                width={200}
+                height={60}
+                priority
+              />
+            </div>
             <Image
               color="black"
               src="/marvin-meyer-SYTO3xs06fU-unsplash.jpg"

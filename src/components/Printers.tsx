@@ -54,7 +54,7 @@ export default function Printers() {
         </a>
 
         <a
-          href="https://10.1.100.30/properties/authentication/login.php?redir=/stat/welcome.php"
+          href="https://10.1.100.36/properties/authentication/login.php?redir=/stat/welcome.php"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
