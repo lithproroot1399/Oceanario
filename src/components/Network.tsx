@@ -7,8 +7,6 @@ import { MdVpnLock } from "react-icons/md"
 import { TbNetwork } from "react-icons/tb"
 import { GiServerRack } from "react-icons/gi"
 import { useState } from "react"
-import { c } from "react-icons/fa"
-import Printers from "./Printers"
 
 export default function Network() {
   const [showNetwork, setShowNetwork] = useState(false)
