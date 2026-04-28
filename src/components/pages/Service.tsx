@@ -8,7 +8,7 @@ import { CiMail } from "react-icons/ci"
 import { SiAppstore } from "react-icons/si"
 import { FaNetworkWired } from "react-icons/fa6"
 import { RiDashboard2Fill } from "react-icons/ri"
-
+import { GiAquarium } from "react-icons/gi"
 import { AiFillPrinter } from "react-icons/ai"
 
 export default function Service() {
@@ -94,6 +94,16 @@ export default function Service() {
           >
             <SiAppstore className="size-10 text-blue-500" />
             <span className="text-xl font-semibold">NOSSOS APP'S</span>
+          </a>
+
+          <a
+            href="/webapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+          >
+            <GiAquarium className="size-10 text-blue-500" />
+            <span className="text-xl font-semibold">GTC / BMS</span>
           </a>
         </aside>
 

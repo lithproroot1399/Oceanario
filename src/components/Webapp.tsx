@@ -44,7 +44,7 @@ export default function Webapp() {
           </a>
 
           <a
-            href="https://mytho.oceanario.pt:5005/"
+            href="https://admin.exchange.microsoft.com/#/resources/:/ResourceDetails/5a851767-a2cb-4786-bf7f-e44ebfe879c8"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
@@ -56,14 +56,14 @@ export default function Webapp() {
 
         <main className="flex w-full items-center justify-center rounded-3xl bg-white p-6 shadow-lg md:w-2/3">
           <div className="w-full max-w-4xl text-center">
-            <div className="flex">
+            <div className="flex items-center justify-center">
               <Image
                 color="black"
                 className="flex"
                 src="/Logo.png"
                 alt="Oceanario logo"
-                width={200}
-                height={60}
+                width={400}
+                height={80}
                 priority
               />
             </div>

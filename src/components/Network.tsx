@@ -12,7 +12,7 @@ export default function Network() {
   const [showNetwork, setShowNetwork] = useState(false)
   const [showWiFi, setShowWiFi] = useState(false)
   const [showMdVpnLock, setShowMdVpnLock] = useState(false)
-  const [showMApps, setShowApps] = useState(false)
+  const [showApps, setShowApps] = useState(false)
 
   return (
     <div className="flex gap-8 m-4">
@@ -89,6 +89,7 @@ export default function Network() {
           <FaTools className="size-10 text-blue-500" />
           <span className="text-xl font-semibold">TOOLS</span>
         </button>
+        {/** biome-ignore lint/a11y/useButtonType: <explanation> */}
         <button
           onClick={() => {
             setShowWiFi(!showApps)
