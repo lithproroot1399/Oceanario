@@ -5,11 +5,10 @@ import { FaDropbox } from "react-icons/fa"
 import { FaMicrosoft } from "react-icons/fa"
 import { BsCloudPlusFill } from "react-icons/bs"
 import { CiMail } from "react-icons/ci"
-import { BsGlobeAmericas } from "react-icons/bs"
+import { SiAppstore } from "react-icons/si"
 import { FaNetworkWired } from "react-icons/fa6"
 import { RiDashboard2Fill } from "react-icons/ri"
-import { IoLockOpen } from "react-icons/io5"
-import { MdOutlineElectricCar } from "react-icons/md"
+
 import { AiFillPrinter } from "react-icons/ai"
 
 export default function Service() {
@@ -86,18 +85,28 @@ export default function Service() {
             <RiDashboard2Fill className="size-10 text-blue-500" />
             <span className="text-xl font-semibold">DASHBOARD</span>
           </a>
+
+          <a
+            href="/webapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+          >
+            <SiAppstore className="size-10 text-blue-500" />
+            <span className="text-xl font-semibold">NOSSOS APP'S</span>
+          </a>
         </aside>
 
         <main className="flex w-full items-center justify-center rounded-3xl bg-white p-6 shadow-lg md:w-2/3">
           <div className="w-full max-w-4xl text-center">
-            <div className="flex">
+            <div className="flex items-center justify-center">
               <Image
                 color="black"
                 className="flex"
                 src="/Logo.png"
                 alt="Oceanario logo"
-                width={200}
-                height={60}
+                width={400}
+                height={80}
                 priority
               />
             </div>

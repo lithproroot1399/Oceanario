@@ -12,6 +12,8 @@ export default function Network() {
   const [showNetwork, setShowNetwork] = useState(false)
   const [showWiFi, setShowWiFi] = useState(false)
   const [showMdVpnLock, setShowMdVpnLock] = useState(false)
+  const [showMApps, setShowApps] = useState(false)
+
   return (
     <div className="flex gap-8 m-4">
       <main className="flex flex-col gap-3 flex-1">
@@ -86,6 +88,16 @@ export default function Network() {
         >
           <FaTools className="size-10 text-blue-500" />
           <span className="text-xl font-semibold">TOOLS</span>
+        </button>
+        <button
+          onClick={() => {
+            setShowWiFi(!showApps)
+            setShowWiFi(false)
+          }}
+          className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition cursor-pointer"
+        >
+          <FaTools className="size-10 text-blue-500" />
+          <span className="text-xl font-semibold">APPS</span>
         </button>
       </main>
       <aside className="flex w-full items-center justify-center rounded-3xl bg-white p-6 shadow-lg md:w-2/3">
