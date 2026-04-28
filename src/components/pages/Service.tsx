@@ -56,34 +56,6 @@ export default function Service() {
             <BsCloudPlusFill className="size-10 text-blue-500" />
             <span className="text-xl font-semibold">SERVICE DESK</span>
           </a>
-          <a
-            href="http://10.2.1.122:8100/index.html#!/login"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
-          >
-            <IoLockOpen className="size-10 text-blue-500" />
-            <span className="text-xl font-semibold">SALTO</span>
-          </a>
-          <a
-            href="https://evmanager.efimob.com/login"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
-          >
-            <MdOutlineElectricCar className="size-10 text-blue-500" />
-            <span className="text-xl font-semibold">EFIMOB</span>
-          </a>
-
-          <a
-            href="https://mytho.oceanario.pt:5005/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
-          >
-            <BsGlobeAmericas className="size-10 text-blue-500" />
-            <span className="text-xl font-semibold">MYTHO</span>
-          </a>
 
           <a
             href="/network"
