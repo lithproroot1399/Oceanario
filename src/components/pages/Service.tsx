@@ -109,7 +109,7 @@ export default function Service() {
 
         <main className="flex w-full items-center justify-center rounded-3xl bg-white p-6 shadow-lg md:w-2/3">
           <div className="w-full max-w-4xl text-center">
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center mb-6">
               <Image
                 color="black"
                 className="flex"
@@ -120,15 +120,20 @@ export default function Service() {
                 priority
               />
             </div>
-            <Image
-              color="black"
-              src="/marvin-meyer-SYTO3xs06fU-unsplash.jpg"
-              alt="Oceanario imagem destaque"
-              width={900}
-              height={600}
-              className="mx-auto h-auto max-w-full rounded-3xl object-cover"
-              priority
-            />
+
+            {/* Substituição da Imagem pelo Vídeo */}
+            <div className="relative overflow-hidden rounded-3xl">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="mx-auto h-auto w-full max-w-full rounded-3xl object-cover"
+              >
+                <source src="/IMAGENS WEBSITE 13.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos.
+              </video>
+            </div>
           </div>
         </main>
       </div>

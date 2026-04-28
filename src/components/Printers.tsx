@@ -16,9 +16,11 @@ export default function Printers() {
   return (
     <div className="flex gap-8 m-4">
       <main className="flex flex-col gap-3 flex-1">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center justify-center gap-2">
           <FcPrint className="size-10" />
-          <p className="text-black text-lg font-bold">Impressoras Oceanário</p>
+          <p className="text-whaite text-3xl font-bold">
+            Impressoras Oceanário
+          </p>
         </div>
         {/** biome-ignore lint/a11y/useButtonType: <explanation> */}
         <button
