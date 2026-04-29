@@ -8,6 +8,7 @@ import { BsGlobeAmericas } from "react-icons/bs"
 import { IoFileTrayFullSharp } from "react-icons/io5"
 import { IoLockOpen } from "react-icons/io5"
 import { MdOutlineElectricCar } from "react-icons/md"
+import { RxGlobe } from "react-icons/rx"
 
 export default function Webapp() {
   return (
@@ -44,6 +45,16 @@ export default function Webapp() {
           </a>
 
           <a
+            href="https://alvov3.primaveraspace.com/identity/Account/Login?ReturnUrl=%2Fidentity%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DOmniaWebApp%26redirect_uri%3Dhttps%253A%252F%252Falvov3.primaveraspace.com%252FOE_ODLFOATLC%252FPRD%252Fauth%26response_type%3Dcode%26scope%3Dopenid%2520email%2520api%2520offline_access%26state%3Dbc59d9aa91124013b4822853f57c4526%26code_challenge%3DGb7xMfk6mAaAEbmyccxpnbeL--YcodnCP6VMlOgPy5A%26code_challenge_method%3DS256%26response_mode%3Dquery"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+          >
+            <RxGlobe className="size-10 text-blue-500" />
+            <span className="text-xl font-semibold">OMINIA</span>
+          </a>
+
+          <a
             href="https://admin.exchange.microsoft.com/#/resources/:/ResourceDetails/5a851767-a2cb-4786-bf7f-e44ebfe879c8"
             target="_blank"
             rel="noopener noreferrer"
@@ -62,7 +73,7 @@ export default function Webapp() {
             <span className="text-xl font-semibold">GALERIA</span>
           </a>
           <a
-            href="https://admin.exchange.microsoft.com/#/resources/:/ResourceDetails/5a851767-a2cb-4786-bf7f-e44ebfe879c8"
+            href="\\rodovalho"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
