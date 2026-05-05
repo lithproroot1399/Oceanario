@@ -9,6 +9,7 @@ import { ImFilm } from "react-icons/im"
 import { IoLockOpen } from "react-icons/io5"
 import { MdOutlineElectricCar } from "react-icons/md"
 import { RxGlobe } from "react-icons/rx"
+import { FaCalendarAlt } from "react-icons/fa"
 
 export default function Webapp() {
   return (
@@ -52,6 +53,16 @@ export default function Webapp() {
           >
             <RxGlobe className="size-10 text-blue-500" />
             <span className="text-xl font-semibold">OMINIA</span>
+          </a>
+
+          <a
+            href="http://localhost:5173/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-blue-600 hover:bg-white hover:text-slate-900 transition"
+          >
+            <FaCalendarAlt className="size-10 text-blue-500" />
+            <span className="text-xl font-semibold">CALENDÁRIO</span>
           </a>
 
           <a
